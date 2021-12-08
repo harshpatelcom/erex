@@ -1,0 +1,147 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Bebas Neue', cursive; 
+}
+body{
+    overflow-x: hidden;
+}
+
+nav{
+    /* border:  solid 2px red; */
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    position: relative;
+    text-transform: uppercase;
+}
+
+.visible{
+    overflow-x: visible;
+}
+
+/* .logo{
+    border: solid 2px yellow;
+} */
+
+.logo img{
+    width: 11vw;
+    height: 10vh;
+}
+.navbar{
+ 
+    flex-direction: column;
+    position: absolute;
+    left: -1px;
+    transform:translateX(-100%) ;
+    top: 0vh;
+    height: 100vh;
+    transition: 0.5s ease-in;
+    background-color: rgb(14, 57, 136);
+    display: flex;
+    width: 50%;
+    padding: 15vh 0vh
+
+}
+
+.navbar-show{
+    transform: translateX(0%);
+    transition: 0.25s ease-out;
+}
+
+/* .navbar{
+    border: solid 2px green;
+    display: flex;
+    width: 50%;
+    justify-content: space-between;
+    height: 15vh;
+} */
+
+.navitem{
+    /* border: solid 2px navy; */
+    margin: auto;
+    list-style: none;
+}
+
+.navitem a{
+    font-size: 2rem;
+    text-decoration: none;
+    color: white;
+    border-bottom: 2px navy solid;
+    
+}
+
+.bar{
+    z-index: 4534;
+    font-size: 45px;
+    width: 50px;
+    height: 50px;
+    margin: auto 10px;
+    color: black;
+    /* border:  2px solid white; */
+    display: block;
+}
+
+.video{
+    position: relative;
+    background-color: black;
+    height: 90vh;
+    width: 100vw;
+    z-index: -23;
+}
+
+video{
+    top: 50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    z-index: -1;
+    position: absolute;
+    width: 70%;
+}
+.hero{
+    display: grid;
+    place-items: center;
+    font-size: 2rem;
+    height: 100%;
+    width: 100%;
+    color: white;
+    text-align: center;
+    
+
+}
+
+.hero h1{
+
+    font-family: 'Readex Pro', sans-serif;
+}
+
+.hero a{
+    text-decoration: none;
+    font-family: 'Bebas Neue', cursive;
+    color:white;
+    background-color: rgb(84, 84, 253);
+    border-radius: 10px;
+    padding:10px;
+
+}
+.text-slider-items {
+    display: none;
+}
+
+
+@media screen and (max-width:900px) {
+    body{
+         font-size: 5px;
+     }
+
+     .hero{
+         font-size: 1rem;
+     }
+
+     .navbar{
+         width: 100%;
+     }
+
+  
+} 
